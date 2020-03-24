@@ -1,0 +1,13 @@
+Conceptos elementales de Responsive Design
+  * Mostly Fluid, Colocación de columnas, Layout Shifter, Tiny tweaks, off canvas: Patrones de diseño
+
+  * Viewport: area visible del navegador
+
+  * Mobile First: Enpenzar del telefono -> La mejor 
+
+  * Desktop First : Empenzar del computador 
+
+  * Portrait - Landscape: Se tiene en cuenta el movimiento del celular, vertical u Horizontal
+
+  * Google analitis: Se utiliza para ver por donde ingresan más los usuarios
+
