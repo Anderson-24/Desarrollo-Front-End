@@ -1,0 +1,208 @@
+/* Lenguaje de hojas de estilo */
+
+/* Selector universal*/
+*{
+    margin: 0;
+    padding: 0;    
+} 
+
+body {
+    background: #161616;
+    Color: #ffffff
+}
+
+/* Tipos de Selectores */
+
+/* las claces se definiran por un "." */
+
+/* los "ID" son identificados con una "#" pero solo se utilizan una vez*/
+
+/* También exciste la pocibilidad de usar los selectores desendentes, apuntando a una 
+        etiqueta dentro de otra o bien puede ser, por ejemplo una clase dentro de una etiqueta,
+        esto se hace para ser mas especificos Ejemplo "P .Clasesita{color:blue;}" */
+
+/* Tambien teniendo en cuenta lo anterior se puede realizar un selector marcando por una 
+        etiqueta y su propiedad, estas a su vez limitadas por un "[]" ejemplo: "a [href="Http://HolaMundo.com"]",
+        estariamos entonces dandole una propiedad a una etiqueta de enlace web con sierta ruta. */
+
+/* Unidad de medida */
+
+/* Medidas absolutas sonn las fijas como "cm,mm,in" pero no son muy usadas  */
+
+/* medidas relativas: son la que tienen flexibilidad, por lo general son las mas usadas entre ellas se encuentran
+       los "px,em,rem" tambien se pueden utilizar los "em" */
+
+/* Los "Em" son herederos de su elemento padre por ejemplo un "<div><span>" si el "div" tiene "20px"
+         entonces el "Span" tendra "1em" ese valor sera igual a "20px" 2em seran igual a "40px", ".5em" equivaldram 
+         a "10px" y asi */
+
+/* unidad de colores */
+
+/* los mas utilizados son los Heaxadecimal que son como los que estan en el "body" o tambien se utilizan
+     los "rgba" ejemplo de este ultimo (454,848,548,0.5) ese ultimo es para dar tranparencia */
+
+/* Pocicionamiento */
+
+/* ademas del width y el height que ya los conocemoas ancho y altura, excisten tambien el
+     -"margin" que es el que da margenes fuera de la caja
+     -"El Padding"que es el que agregar margenes dentro de la caja
+     -"Border" este ellemento ya tiene como tal el margen de la caja se pueden utilizar varias propiedades en el,
+      
+     
+     como lo son el solid*/
+
+/* una caracteristica tambien muy importantes es la del "display:inline-block"  */
+
+/* Fondos *
+    podemos agregar una imagen de fondo con:
+         "Background:url(img/10101.11.11001.Png)" y tambien podemos agregarle la propiedad para que no se repita con 
+         "background-repeat:no-repeat" para que se quede quieto, utilizaremos la propiedad
+         "background-attachment:fixed" y para que tenga una pocicion en este caso puede ser centrada
+         "background-position:center 0px" ese "opx" reprecenta el margen de arriba*/
+
+/* posicionamiento de cajas */
+
+/* es importante utilizar los "Float", esta ppropiedad te ayudara a que se desplacen los elementos 
+    siguientes de algo al lado indicado. por ejemplo usualmente se utiliza "Float:Left;" 
+    quiere decir que apartir de donde estem declarando esta propiedad todos los elementos 
+    se pocicionaran a la izquierda de este. en caso tal que ya no quieras que se pocicionen de esta manera
+     aremos un corte con la propiedad, "Clear:Both;" */
+
+/* Texto y tipografia */
+
+/* cambiaremos la tipografia con la propiedad "font-Family:'Arial';"  por ejemplo "Arial",
+     hay que tener en cuenta que para las fuentes con espacios, las ubicaremos dentro de comillas */
+
+/* para determinar la posicion del textoo utilizaremos la propiedad "text-aling" y podemos colocar 
+     por ejemplo "text-aling:center;" */
+
+/* podemos agregarle una decoracion al texto con la propiedad "text-decoration" y podemos aplicar por 
+     ejemplo: "underline,none,overline,line-through" */
+
+/* podemos también añadirle o configurarle el tema de mayusculas minusculas al textos 
+     con la propieda "text-transform" y entre sus caracteristicas estan "capitalize,uppercase,lowercase"  */
+
+/* estas propiedades n se usan mucho pero de igual manera las menciono, "letter-spacing" y "word-spacing"
+      modifica el espacio entre letras y palabras */
+
+/* con la siguiente propiedad podremos establecer una sombra al texto "text-shadow" y especificaremos 
+      la pocicion y color*/
+
+/* Enlaces y las seudo claces */
+
+/* los enlaces que no han sido visitados se manejan con la propiedad 
+    "a:link" allí podremos agregar todos los estilos que queramos cuando un eslace este en este estado. con 
+    "a:hover" podremos agregarle las propiedades que queramos al pasar el "mouse" sobre el link. con 
+    "a:active" definiremos que pasara cuando el usuario de click. por ultimo la 
+    "a:visited" determinaremos los enlaces que se han visitado  */
+
+.Menu {
+    list-style: none;
+    background: #88740288;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Menu li {
+    display: inline-block;
+}
+
+.Menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #ffffff;
+}
+
+.Menu li a:hover {
+    background: #555554;
+    color: #a87f0488;
+}
+
+.Menu li a:active {    
+    background: #292828;
+    color: #ffffff;
+}
+
+.wrapper{
+    padding: 10px 20px;
+    margin: auto;
+    width: 75%;
+}
+p{
+    margin: 15px 0px;
+}
+
+h2{
+    text-align: center;
+    color: #a4c003;
+}
+h3{
+    color: #a4c003;
+}
+
+
+footer{
+    text-align: right;
+    margin: 0px 0px;
+    color: #88740288;
+    width: 75%;
+    margin: auto;
+}
+
+nav{
+    width: 75%;
+    margin: auto;
+}
+
+form{
+    margin: 20px auto;
+    width:50%;
+    padding: 20px;
+    border: 1px solid #88740288;
+}
+
+label{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 200px; 
+    min-height: 100px;
+    width: 100%;
+    min-width: 100%;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #292828
+}
+
+input:focus, textarea:focus{
+    border: 1px solid #25067a
+}
+
+input[type="submit"]{
+    margin:  0px auto;
+    background: #465201;
+    color: #ffffff;
+    border: none;
+    width: 25%;
+    min-width: 100px;
+    display: block;
+    box-align: right;
+}
+
+input[type="submit"]:hover{
+    background: #8ba303;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #465201;
+}
+
+
