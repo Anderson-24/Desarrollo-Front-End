@@ -61,6 +61,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     object-fit: cover;
+    flex-wrap: wrap;
 }
 
 .portfolio{
@@ -77,6 +78,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap
 }
 
 .project-course, .project-date, .project-url{
@@ -106,7 +108,7 @@ figure{
 }
 
 .header figure img {
-    height: 100px;
+    height: 60px;
 }
 
 .header{
@@ -115,8 +117,9 @@ figure{
     color: white;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     height: 100px ;
+    flex-wrap: wrap;
 }
 
 .menu{
@@ -154,6 +157,7 @@ ul  {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap
 }
 
 .footer img{
@@ -221,6 +225,7 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social-link{
@@ -283,9 +288,10 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
 }
 
 .container2{
-    width: 95%;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0px 10px;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -305,3 +311,39 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
     color: white;
 }
 
+/* desktop first que empieces desde el MQ más grande */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+       display: block;
+       height: auto;       
+    }
+    .header ul {
+        display: initial;
+    }
+    .header ul li{
+        height: 50px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .Logo{
+        text-align: center;
+    }
+    .container2{
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}

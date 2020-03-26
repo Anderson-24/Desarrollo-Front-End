@@ -11,3 +11,29 @@ Conceptos elementales de Responsive Design
 
   * Google analitis: Se utiliza para ver por donde ingresan más los usuarios
 
+Meta viwport
+  *Meta name="viewport"
+  	device-width  == iguala el ancho de mi dispositivo
+	initial-scake == se referencia para que el contenido ocupe su lugar 1 representa 100
+
+Medidad Relativas utiles en Responsive Design
+  *Porcentaje: longitud referente al tamaño de los elementos padres
+  *em: Unidad relativa al tamaño de fuente especificada mas cercana incluyendo al mismo elemento si lo        tiene especificado
+  *rem: unidad relativa al tamaño de fuente especificado más lejano(html,body)
+  *vw/vh: unidad relativa porcentual con respecto al viewport 
+
+Media queries
+  *cambia condicion de style dependiendo de la necesidad, se compone con una midia type y una condición
+
+Formas de incluir media queries
+  *podemos crear condiciones dentro del Html para aplicar cada estilo que requeramos
+  	<link rel="stylesheet" href="css/media.cc" media="screen and (max-wedth:768px)"/>
+  *Podemos crear nuestras condicones dentro de nuestra hoja de estilos principal
+  	@media screen and (max-width: 780px) { body { border: 10px solid green; } }
+  *Dentro del mismo Html mediante sytle
+  	<style> ... </style>
+
+Diseño elástico con max-width y flex-wrap
+  *flex-wrap: wrap; comtrola el flexbox indicando si es one line o multi line en este caso seria multi.
+
+
