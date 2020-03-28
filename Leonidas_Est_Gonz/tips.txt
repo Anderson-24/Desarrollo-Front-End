@@ -40,3 +40,18 @@ Ajustando nuestro portafolio
   *Es mejor utilizar "auto" que "100%" por render
   *cuando algo tiene "display: flex" no interactua con text-aling
 
+Css positions
+  *nos ayuda a super poner un elemento uno dentro del otro o moverlo de una manera muy particular
+  *position: 
+       *z-index: ayuda a establecer o a sobre poner un elemento poniendole un valor mayor, ejemplo 1 < 2 
+       -- static: por defecto
+       -- realitive: Nos permite movernos sin embargo no pierde su estado original
+       -- absolute: sera relativo al elemento padre "relative" más cercano puerde el estado original
+       -- fixed: cuando una propiedad toma este valor esta por encima de todo
+       -- sticky: sobre pone un elemento por encima de todo cuando alcanza la posicion declarada (top: 0)
+Videos Html5
+  *los videos por defecto no tiene controles asi que los agregamos con "controls"
+
+Videos insertado
+  *iframe: es una etiqueta que nos permite relacionar otro sitio web al nuestro
+       -- frameborder: define si contiene borde 

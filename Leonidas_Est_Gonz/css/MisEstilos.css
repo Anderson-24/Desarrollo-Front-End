@@ -50,7 +50,33 @@ h1{
     color: white;
     margin: 0px;
 }
-
+.html_video{
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+.youtube_video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 3;
+}
+.flexible_video{
+    max-width: 1000px;
+    padding-top: 56.25%;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+.video{
+    width: 100%;
+}
 .hero{
     /* background-image: url('../Img/SysSecurity.PNG'); */
     background-color: #1b2127 ;
@@ -330,6 +356,23 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
     .contac, .container2{
         padding: 0 1em;
     }
+    .hero{
+        overflow: hidden;
+        position: relative;
+        padding: 2em;
+    }
+    .hero-image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h1{
+        z-index: 2;
+    }   
 }
 
 @media screen and (max-width: 767px) {
@@ -414,6 +457,12 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
 }
 
 @media screen and (max-width: 480px) {
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
     .project-details{
         font-size: 12px;
     }
@@ -424,6 +473,15 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
 }
 
 @media screen and (max-width: 320px) {
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    .hero{
+        padding: 2em 1em;
+    }
     .project-details{
         font-size: 10px;
     }
