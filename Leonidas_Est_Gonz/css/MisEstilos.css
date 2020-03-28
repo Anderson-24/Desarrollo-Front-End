@@ -132,6 +132,18 @@ ul  {
     list-style: none;
 }
 
+.project-details{
+    width: 49.5%;
+}
+
+.project-imageContainer{
+    width: 49.5%
+}
+
+.project-imageContainer img{
+    max-width: 100%
+}
+
 .header a{
     color: white;
     text-decoration: none;
@@ -162,6 +174,7 @@ ul  {
 
 .footer img{
     vertical-align:middle ;
+    border-radius: 50%;
     
 }
 
@@ -182,8 +195,8 @@ ul  {
 La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
 .event{
     /* border-block: solid; */
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -277,7 +290,7 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
 }
 
 .container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
     display: inherit;
@@ -314,7 +327,9 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
 /* desktop first que empieces desde el MQ más grande */
 
 @media screen and (max-width: 1024px) {
-
+    .contac, .container2{
+        padding: 0 1em;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -337,13 +352,79 @@ La propiedad "flex-shrink: 0;" reafirma el ancho establecido. */
     .container2{
         padding-top: 10px;
     }
+    .project{
+        display: block;
+    }
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-course, .project-date, .project-url{
+        margin: .3em 0;
+    }
 
+    .project-title{
+        font-size: 2em;
+        margin-bottom: .3em;
+    }
+    .project-course{
+        font-size:  1.5em;
+    }
+    .project-date{
+        font-size: 1.2em;
+    }
+    .project-url{
+        font-size: 1.2em;
+    }
+    .project-description{
+        font-size: 1.2em;
+    }
+    .event{
+       width: auto;
+       flex-shrink: inherit;
+    }
+    .event img{
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width: 570px) {
+    .contac{
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+    }
+    .form-email button{
+        margin: 1em auto;
+    }
+    .form-email h3{
+        margin-top: 0 ;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        /* padding-bottom: 1px; */
+        border: 1px solid transparent;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    
+    .project-details{
+        font-size: 12px;
+    }
+    .event-detail{
+        margin: -2em .5em .5em;
+        padding: 1em ;
+    }
 }
 
 @media screen and (max-width: 320px) {
-    
+    .project-details{
+        font-size: 10px;
+    }
 }

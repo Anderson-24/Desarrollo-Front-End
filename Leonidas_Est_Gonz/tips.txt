@@ -36,4 +36,7 @@ Formas de incluir media queries
 Diseño elástico con max-width y flex-wrap
   *flex-wrap: wrap; comtrola el flexbox indicando si es one line o multi line en este caso seria multi.
 
+Ajustando nuestro portafolio
+  *Es mejor utilizar "auto" que "100%" por render
+  *cuando algo tiene "display: flex" no interactua con text-aling
 
