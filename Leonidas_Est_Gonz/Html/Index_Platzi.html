@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container2">
             <figure class="Logo">
@@ -20,7 +21,7 @@
                 <img src="../img/0001.PNG" alt="Logo principal" />
             </figure>
             <nav class="menu">
-                <!-- Recordando que "ol" especifica orden y "ul" solo indica un punto -->
+            <!-- Recordando que "ol" especifica orden y "ul" solo indica un punto -->
                 <ul>
                     <li>
                         <a href="https://platzi.com/" target="_black">Plazti</a>
@@ -45,12 +46,12 @@
             <img class="hero-image" src="../Img/SysSecurity.PNG" alt="Imagen principal del sitio">
         </div>
     </Section> 
-    <div class="html_video">
-        <video class="video" src="../videos/SpaceX_ITS.mp4" controls></video>
-    </div>
     <section class="portfolio">
         <div class="container">
             <h2>Proyectos destacados</h2>
+            <div class="html_video">
+                <video class="video" src="../videos/SpaceX_ITS.mp4" controls></video>
+            </div>
             <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Aprendiendo con Platzi</h3>
@@ -79,11 +80,11 @@
                     <img class="project-image" src="../Img/AnonimousCol.PNG" alt="Imagen de AnonimousCol" width="500px">
                 </figure>
             </article>
+            <div class="flexible_video">
+                <iframe width="560" height="315" class="youtube_video" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
-    <div class="flexible_video">
-        <iframe width="560" height="315" class="youtube_video" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
     <div class="container">
         <h2 class="event-list-title" > Contenido adicional</h2>
     </div>
@@ -183,6 +184,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const burgerbutton = document.querySelector('#burger-menu');
+
+        burgerbutton.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (menu.classList.contains('is-menu-active')) {
+                menu.classList.remove('is-menu-active');
+            } else {
+                menu.classList.add('is-menu-active');
+            }
+        }
+        
+    </script>
 </body>
 
 </html>

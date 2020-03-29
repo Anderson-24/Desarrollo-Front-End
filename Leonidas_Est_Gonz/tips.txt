@@ -55,3 +55,39 @@ Videos Html5
 Videos insertado
   *iframe: es una etiqueta que nos permite relacionar otro sitio web al nuestro
        -- frameborder: define si contiene borde 
+
+Fuentes de Iconos
+  *@font-face: con este atributo podemos crear tipo de fuentes personalizadas
+       -- font-family: 'icomoon'; : Establecemos el nombre de la fuente en este caso "icomoon"
+       -- src: establece los formatos fuente que se aplicaran de acuerdo al navegador
+   
+  *[class^="icon-"] : declara que cualquier elemento que contenga una clace iniciando con "icon-"
+  *[class*=" icon-"] : declara que cualquier elemento que contenga en algun momento de su clase tenga "icon-"
+
+  *i : general mente pone las letras en cursiva pero tambien se utiliza mucho para iconos
+
+Añadir un menú de hamburgesa
+  *line-height : nos permire ubicar un opjeto de manera vertical funcionando con display en block en flex utilizamos align-items
+  
+  *text-align : nos permite realizar la unicación de un elemento de forma horizontal en block, en flex utilizamos justify-content
+
+Posicionando el menú
+  *recuerda que una condiconal css indica que cuando dos clases estan juntas es decir sin espacios estte la interpreta como "&"
+  
+  *transition : es una propiedad que nos permite realizar una animacion de transación de un elementoo en el tiempo declarado
+
+Añadiendo Javascript para detección de eventos
+  *console.log('Mensaje Hola') : comando JS que nos permite enviar un mensaje de consola
+  
+  *document.querySelector('.menu') : selector, en este ejemplo seleccionamos el elemento con clase "menu"
+        -- .classList.add('is-menu-active'); : nos permite unir una nueva class, recuerda que como estamos añadiendo una clase 
+	    no necesita del "." al inicio
+	-- .classList.remove('is-menu-active'); : nos permite remover una clase
+	-- menu.classList.contains('is-menu-active') : nos pemite verificar dentro del constante menu la presencia de "is-menu-active"
+
+  *const : nos ayuda a declarar una variable de tipo constante
+
+  *addEventListener : es una propiedad que agrega un evento a un elemento
+        -- ('click') : al realizar "click" realizara la siguiente funcion mencionada
+	   Ejm: burgerbutton.addEventListener('click', hideShow);
+   
