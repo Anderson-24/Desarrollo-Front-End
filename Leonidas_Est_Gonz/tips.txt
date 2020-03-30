@@ -102,3 +102,6 @@ creando un servidor de archivos estáticos con Node
   *Servidor de archivos estaticos: es un servicio de tipo estatico
   *npm: nos permite verificar dentro de la linea de comando si esta instalado Node js o con la versión de npm -v, gestor de paquetes
   *npm -g install static-server: instalamos de manera global(-g) el paquete estatico "static-server"
+  *http://192.168.1.5:9080/Html : esta ruta nos sirve para poder visualizar el sitio desde nuestro movil, importante estar en la misma		red de wifi
+  *static-server: es un comando aplicado en la terminal que nos ayuda a activar el servidor estatico 
+
