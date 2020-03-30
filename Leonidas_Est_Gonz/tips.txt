@@ -90,4 +90,15 @@ Añadiendo Javascript para detección de eventos
   *addEventListener : es una propiedad que agrega un evento a un elemento
         -- ('click') : al realizar "click" realizara la siguiente funcion mencionada
 	   Ejm: burgerbutton.addEventListener('click', hideShow);
-   
+
+Media queries con JavaScript
+  * window.matchMedia('screen and (max-width: 767px)'); media query en Javascript "matchMedia" resive una consulta a los medios
+  	-- matches : resivimos si la condicion se cumplio o no 
+  *addListener(): es una función que invoca otro función
+
+  *removeEventListener: es importante para la optimación de la pagina realizar un remuve de los listener cuando no se esten utilizando
+  
+creando un servidor de archivos estáticos con Node
+  *Servidor de archivos estaticos: es un servicio de tipo estatico
+  *npm: nos permite verificar dentro de la linea de comando si esta instalado Node js o con la versión de npm -v, gestor de paquetes
+  *npm -g install static-server: instalamos de manera global(-g) el paquete estatico "static-server"
