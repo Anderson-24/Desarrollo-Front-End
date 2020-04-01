@@ -94,7 +94,7 @@ Añadiendo Javascript para detección de eventos
 Media queries con JavaScript
   * window.matchMedia('screen and (max-width: 767px)'); media query en Javascript "matchMedia" resive una consulta a los medios
   	-- matches : resivimos si la condicion se cumplio o no 
-  *addListener(): es una función que invoca otro función
+  *addListener(): es una función que invoca otro función, sin embargo la función que pusimos actua siempre y cuando la pantalla sufra 			algún cambio
 
   *removeEventListener: es importante para la optimación de la pagina realizar un remuve de los listener cuando no se esten utilizando
   
@@ -105,3 +105,19 @@ creando un servidor de archivos estáticos con Node
   *http://192.168.1.5:9080/Html : esta ruta nos sirve para poder visualizar el sitio desde nuestro movil, importante estar en la misma		red de wifi
   *static-server: es un comando aplicado en la terminal que nos ayuda a activar el servidor estatico 
 
+Remote Debugging en iOS
+  * Safari es el navegador de iOS modo desarrollo
+  	-- Safari = > Preferencias
+			-- Avanyado = > Mostrar el menú desarrollo en la barra de menús
+	-- Desarrollo = > Nombre de celular conectado = > pagina a inspeccionar
+
+Remote Debugging en Android y puliendo últimos detalles
+  *Opciones del programador
+  	-- En caso de no salir en configuraciones
+		-- Acerca de mi dispositivo o sistema y luego acerca del telefono 
+			-- darle varias veces al numero de compilación
+	-- programador o Opcione del programador
+		--Depuración por USB = true
+	
+  *chrome://inspect/#devices : Esta ruta nos permite monitorear nuestra pagina desde el dispocitivo una vez realizado los anterior
+  	-- inspect
