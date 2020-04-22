@@ -2,5 +2,6 @@ Cursos involucrados
 
 Desarrollo Wed
 Responsive Design
+Curso de CSS Grid Layout
 
 Saludos

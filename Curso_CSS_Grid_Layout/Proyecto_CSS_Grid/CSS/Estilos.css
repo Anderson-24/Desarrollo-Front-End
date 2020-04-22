@@ -1,0 +1,64 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+      /* asigna el numero de colucnas especificadas mediante el espacio dentro de grid */
+  /* grid-template-columns: 200px 200px 200px; */
+  /* grid-template-rows: 300px 300px; */
+      /* tambien se puede utilizar en una sola donde : filas / columnas;  */
+  /* grid-template: 50px 70px 50px / 1fr 1fr 1fr; */
+  grid-template: repeat(4, 50px) / repeat(3,1fr);
+      /* De igual manera funciona para los espaciados con la propiedad grid-column/row-gap o: */
+  /* grid-column-gap: 20px; */
+      /* donde: filas columnas; */
+  /* grid-gap: 10px 20px;  */
+  grid-gap: 10px; 
+}
+
+.item{
+  background: #0791e6;
+  padding: 10px;
+  border: 1px solid #273b47;
+  overflow: auto;
+  /* funcionara como si estubiera heredando el "display: grid;" del padre */
+  /* display: subgrid; */
+}
+
+.item:nth-of-type(4){
+  background: blue;
+}
+
+.container2{
+  height: 500px;
+  display: grid;
+  grid-template: 100px 1fr 80px / 150px 1fr;
+  grid-template-areas: "header header"
+                       "left container"
+                       "footer footer";
+  grid-gap: 10px; 
+}
+
+.item2{
+  background: #e2017b;
+  padding: 10px;
+  border: 1px solid #e6001e;
+}
+
+.header{
+      /* Esta propiedad hereda del container del padre */
+  grid-area: header;
+}
+
+.left{
+  grid-area: left;
+}
+
+.contenido{
+  grid-area: container;
+}
+
+.footer{
+  grid-area: footer;
+}

@@ -1,0 +1,37 @@
+Conseptos Fundamentales sobre CSS Grid Layout
+	*Grid Container : Va ser el elemento padre principal que tendra puesto un distinto tipo de display
+
+	*Grid Item : hijos directos de un Grid container 
+
+	*Grid Line : Lineas divisoras horinzontales y verticales incluidas las limitantes
+
+	*Grid Track : Espacios entre dos lineas adyacentes, filas(Vertical) y columnas(Horizontal)
+
+	*Grid Cell : Espacio en dos filas adyacentes y dos columnas adyacentes
+
+	*Grid Area : Espacio que rodeado por 4 grid lines también se puede ampliar a "n"
+
+Definiendo columnas
+	*Hacer "<div>" mas rapido
+		--.item{contenido #$}*12 : Con la clase "item" me va a generar un contenido dinamico "$" por 12
+
+	*grid-template-columns : es una propiedad que se activa en un display grid para manejar las columnas
+		por medio del tamaño indicado y los especios para indicar nueva columna
+
+Definiendo filas
+	*git-template-rows: es una propiedad que se activa con el display grid y te permite controlar las filas
+		*Explicito e inplicito : ten encuenta que se aplican estos parametros
+	
+Grids identados y tipos de displays
+	*.item:nth-of-type(4){} : Tipo se seleccionador CSS el cual toma el cuarto elemento con la clase "item"
+
+	*overflow: auto; :Permite indicarle que queremos que tenga un escrol en caso de que se requiera
+
+Repetidores, unidades de medida y funciones
+	*fr : Nueva unidad de medida, una fraccion va tomar en concideracion el espacio disponible entre
+		filas y columnas para que tome un espacio más homogeneo.
+	
+	*repeat(4,1fr); : es una keyword que simplifica la operacion tambien se puede utilizar con el keyword minmax
+		ejemplo
+		--grid-template: 50px 70px 50px / repeat(3, minmax(200px, 1fr);
+	
