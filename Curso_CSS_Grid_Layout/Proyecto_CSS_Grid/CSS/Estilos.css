@@ -31,9 +31,9 @@ body{
 }
 
 .container2{
-  height: 500px;
+  height: 400px;
   display: grid;
-  grid-template: 100px 1fr 80px / 150px 1fr;
+  grid-template: 60px 1fr 60px / 160px 1fr;
   grid-template-areas: "header header"
                        "left container"
                        "footer footer";
@@ -61,4 +61,34 @@ body{
 
 .footer{
   grid-area: footer;
+}
+
+.container3{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  height: 300px;
+}
+
+.item3{
+  background: #fbdd4b;
+  padding: 10px;
+  border: 1px solid #b24b18;
+}
+
+.item3:nth-of-type(1){
+  /* Con esta propieda marcamos la pocision obiamente toca definir cuando inicia y cuando termina */
+  /* Recuerda que toma como referencia las leneas no las columnas */
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3 ; */
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+}
+.item3:nth-of-type(2){
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+}
+.item3:nth-of-type(3){
+  grid-column: 6 / span 2;
 }
