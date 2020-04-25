@@ -35,3 +35,36 @@ Repetidores, unidades de medida y funciones
 		ejemplo
 		--grid-template: 50px 70px 50px / repeat(3, minmax(200px, 1fr);
 	
+Definiendo el nombre de lineas
+	*Lo que aplicamos aqui fue darle un nombre a cada linea al elemento padre y cual es ese elemento te estaras preguntando
+		pues el container, en la propiedad de "gird-template-columns" y "gird-template-rows"
+	
+	*posterior a ello tomamos cada ploque que deseemos manipular con la propiedad conocida como ".id_elemento:nth-of-tipe(4)"
+
+Manejando el grid implícito
+	*Va a ser los elementos que no han podido ser manejados
+
+	*grid-auto-flow : Es una propiedad que maneja nuestro html implicito, cual es el flujo automatico : row or column
+
+	*grid-auto-columns/rows: 50px; : de igualmanera esta propiedad determina el auto de del espacio que ocupara los implicitos
+
+Alineación de contenido
+	*justify-items: start end center streth; :Aliniado horizontal
+  	
+	*align-items: start end center streth; aliniado vertical
+
+Aplicacion de filas y columnas
+	*justify-content: start end center stretch space-around space-between space-evenl; :Alinea grid horizontal
+	
+	*aline-content: start end center stretch space-around space-between space-evenl; :Alinea grid vertical
+
+Layaout de instagran
+	*cursor: pointer; : esta propiedad hace que aparesca la manito de apuntar cuando estas dentro el objeto
+
+Layout Masonry
+	...
+
+	
+
+
+

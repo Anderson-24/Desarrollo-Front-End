@@ -92,3 +92,124 @@ body{
 .item3:nth-of-type(3){
   grid-column: 6 / span 2;
 }
+
+.container4{
+      /* Realizamos una manera mas facil para que nuestros elemntos inicien donde tengan que iniciar y terminar donde tengan que terminar */
+  display: grid;
+  grid-template-columns: [Inicio] 1fr [Linea1] 1fr [Linea2] 1fr [destacado-end] 1fr [Linea4] 1fr [destacado2-end] 1fr [Linea6] 1fr [Final];
+  grid-template-rows: [Inicio] 1fr [Linea1] 1fr [Final];
+  grid-gap: 5px;
+  height: 300px;
+}
+
+.item4{
+  background: #98d33d;
+  padding: 10px;
+  border: 1px solid #b24b18;
+}
+
+.item4:nth-of-type(1){
+  /* Con esta propieda marcamos la pocision obiamente toca definir cuando inicia y cuando termina */
+  /* Recuerda que toma como referencia las leneas no las columnas */
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3 ; */
+  /* grid-column: 1 / span 3; */
+  /* grid-row: 1 / span 2; */
+  grid-column: Inicio / destacado-end;
+  grid-row: Inicio / Final;
+}
+.item4:nth-of-type(2){
+  /* grid-column: 4 / span 2; */
+  /* grid-row: 1 / span 2; */
+  grid-column: destacado-end / destacado2-end;
+  grid-row: Inicio / Final;
+}
+.item4:nth-of-type(3){
+  /* grid-column: 6 / span 2; */
+  grid-column: destacado2-end / Final;
+  grid-row: Inicio / Linea1;
+  
+}
+
+.container5{
+      /* Realizamos una manera mas facil para que nuestros elemntos inicien donde tengan que iniciar y terminar donde tengan que terminar */
+  display: grid;
+  grid-template-columns: [Inicio] 1fr [Linea1] 1fr [Linea2] 1fr [destacado-end] 1fr [Linea4] 1fr [destacado2-end] 1fr [Linea6] 1fr [Final];
+  grid-template-rows: [Inicio] 1fr [Linea1] 1fr [Final];
+  grid-gap: 5px;
+  height: 300px;
+  grid-auto-flow: column;
+  grid-auto-columns: 50px;
+}
+
+.item5{
+  background: #6ac1d8;
+  padding: 10px;
+  border: 1px solid #b24b18;
+}
+
+.item5:nth-of-type(1){
+  /* Con esta propieda marcamos la pocision obiamente toca definir cuando inicia y cuando termina */
+  /* Recuerda que toma como referencia las leneas no las columnas */
+  /* grid-column-start: 1; */
+  /* grid-column-end: 3 ; */
+  /* grid-column: 1 / span 3; */
+  /* grid-row: 1 / span 2; */
+  grid-column: Inicio / destacado-end;
+  grid-row: Inicio / Final;
+}
+.item5:nth-of-type(2){
+  /* grid-column: 4 / span 2; */
+  /* grid-row: 1 / span 2; */
+  grid-column: destacado-end / destacado2-end;
+  grid-row: Inicio / Final;
+}
+.item5:nth-of-type(3){
+  /* grid-column: 6 / span 2; */
+  grid-column: destacado2-end / Final;
+  grid-row: Inicio / Linea1;
+  
+}
+.container6{
+      /* Alineacion que tiene que ver con los Items */
+  display: grid;
+  grid-gap: 5px;
+  height: 300px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  justify-items: stretch; /* horizontal */
+  align-items: stretch; /* Vertical */
+}
+
+.item6{
+  background: #b30a13;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #049c09;
+}
+
+.item6:nth-of-type(5){
+  justify-self: center; /* horizontal a ti mismo*/
+  align-self: flex-start; /* Vertical a ti mismo*/
+  
+}
+
+.container7{
+  /* Alineacion que tiene que ver con todo el grid */
+  display: grid;
+  grid-gap: 5px;
+  height: 400px;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows: repeat(3,80px);
+  justify-content: center; /* horizontal */
+  align-content: space-around; /* Vertical */
+}
+
+.item7{
+  background: #0ab378;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #049c09;
+}
+
+
