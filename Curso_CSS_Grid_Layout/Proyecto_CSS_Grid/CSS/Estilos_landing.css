@@ -75,6 +75,11 @@ body{
   font-size: 16px;
   cursor: pointer;
 }
+.form button:active{
+  margin-top: 4px;
+  border-bottom: 1px solid #6d932b;
+}
+
 
 .countdown {
   grid-area: countdown;
