@@ -1,0 +1,125 @@
+body{
+  font-family: 'lato', sans-serif;
+  margin: 0;
+}
+
+
+.hero{
+  background: #23475b;
+  color: #ffffff;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 1024px);
+}
+  
+.hero-container{
+  display: grid;
+  grid-template-columns: 80px 1fr 300px;
+  grid-template-areas: "badge title form"
+                       ". descripcion form"
+                       ". countdown form";
+  grid-gap: 10px;
+}
+
+.badge{
+  grid-area: badge;
+}
+
+.badge img{
+  max-width: 80px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  grid-area: title ;
+}
+
+.form{
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5em;
+  border-radius: 5px;
+  grid-area: form;
+}
+
+.form input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbe2;
+  border-radius: 5px;
+    /* esta propiedad permite que el imput respete los espacios del elemento padre y no se salga */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form p {
+  font-size: 20px;
+  color: #3a3b3f;
+  margin-bottom: 1em;
+}
+
+.form button{
+  background: #98ca3f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 5px solid #6d932b;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.countdown {
+  grid-area: countdown;
+}
+
+.countdown p{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.countdown span{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  display: block;
+}
+
+  /* El esta propiedad especificamos lo que queremos que valla despues del elemento seleccionado */
+.countdown strong:after{
+  content: ":";
+  display: inline-block;
+  margin: 0 5px;
+}
+
+  /* aqui toma el ultimo hijo del selctor y toma el after */
+.countdown strong:last-child::after{
+  display: none;
+}
+
+.descripcion {
+  grid-area: descripcion;
+}
+
+@media screen and (max-width: 768px){
+  .hero-container{
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: "badge title"
+                         "descripcion descripcion"
+                         "countdown countdown" 
+                         "form form" ;
+  }
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

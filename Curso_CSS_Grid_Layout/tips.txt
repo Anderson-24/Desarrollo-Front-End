@@ -62,9 +62,10 @@ Layaout de instagran
 	*cursor: pointer; : esta propiedad hace que aparesca la manito de apuntar cuando estas dentro el objeto
 
 Layout Masonry
+	*auto-fill : es una propiedad que nos permite hacer "responsive design" auto completa las filas segun el espacio disponible
+
+	*grid-row-end: span 3 ; : finaliza en la posicion 3, recuerda que si no la inicializamos este tomara como por efecto el 
+		espacio disponible
+
+Reto
 	...
-
-	
-
-
-
