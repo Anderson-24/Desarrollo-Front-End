@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  background: #181818;
+  /* background: #23475b; */
+}
+
+.hero{
+  color: #ffffff;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 1024px);
+}
+
+.container_friends{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0em;
+  padding: 0em;
+}
+.input-text{
+  background: transparent;
+}
