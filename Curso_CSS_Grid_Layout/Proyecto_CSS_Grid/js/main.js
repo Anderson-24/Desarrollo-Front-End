@@ -1,6 +1,6 @@
 const menu = document.querySelector(".menu");
 const burgerbutton = document.querySelector("#burger-menu");
-const ipad = window.matchMedia("screen and (max-width: 767px)");
+const ipad = window.matchMedia("screen and (max-width: 100vw)");
 // console.log(ipad);
 
 ipad.addListener(validation);
@@ -23,3 +23,5 @@ function hideShow() {
     menu.classList.add("is-menu-active");
   }
 }
+
+// var hola = prompt('hola')

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/Estilos_Desafio.css" />
-    <link rel="icon" type="imagen/jpg" href="../img/Logo.jpg" />
+    <link rel="icon" type="imagen/jpg" href="img/badge.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap"
       rel="stylesheet"
@@ -14,43 +14,84 @@
   </head>
   <body>
     <header class="control">
+      <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
       <div class="control_start">
-        <i class="icon-menu burger-button" id="burger-menu"></i>
-        <nav class="menu">
+        <button class="icon-menu burger-button" id="burger-menu">
+          <img src="img/Icons/Menu.png" alt="Icono menu" srcset="" />
+        </button>
+        <!-- <i class="icon-menu burger-button" id="burger-menu"></i> -->
+        <figure class="Logo">
+          <img src="img/badge.png" alt="Logo principal" />
+        </figure>
+        <h1>ReactVideo</h1>
+      </div>
+      <div class="control_center">
+        <div action="" class="search-form">
+          <input
+            type="text"
+            name=""
+            class="input-text"
+            placeholder="Buscar..."
+          />
+          <button type="submit" value="">
+            <img src="img/Icons/Search.png" alt="Search" srcset="" />
+          </button>
+        </div>
+      </div>
+      <div class="control_end">
+        <p>Anderson DS</p>
+        <div class="icon-users">
+          <img src="img/Icons/Users.png" alt="Usuario" />
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <nav class="menu">
+        <div class="item">
           <ul>
             <li>
+              <img src="img/Icons/Casita.png" alt="" class="icon-submenu" />
               <a href="#" target="_blank" rel="noopener noreferrer"
                 >Principal</a
               >
             </li>
             <li>
+              <img src="img/Icons/Fire.png" alt="" class="icon-submenu" />
               <a href="#" target="_blank" rel="noopener noreferrer"
                 >Tendencias</a
               >
             </li>
             <li>
+              <img src="img/Icons/Files.png" alt="" class="icon-submenu" />
               <a href="#" target="_blank" rel="noopener noreferrer"
                 >Suscripciones</a
               >
             </li>
           </ul>
+        </div>
+        <div class="item">
           <ul>
             <li>
+              <img src="img/Icons/Files.png" alt="" class="icon-submenu" />
               <a href="#" target="_blank" rel="noopener noreferrer"
-                >Biblioteca</a
+              >Biblioteca</a
               >
             </li>
             <li>
+              <img src="img/Icons/Files.png" alt="" class="icon-submenu" />
               <a href="#" target="_blank" rel="noopener noreferrer"
-                >Historial</a
+              >Historial</a
               >
             </li>
             <li>
+              <img src="img/Icons/vidios.png" alt="" class="icon-submenu" />
               <a href="#" target="_blank" rel="noopener noreferrer"
                 >Tus Videos</a
               >
             </li>
           </ul>
+        </div>
+        <div class="item">
           <ul>
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer">NASA</a>
@@ -72,79 +113,63 @@
               >
             </li>
           </ul>
-        </nav>
-        <figure class="Logo">
-          <img src="img/badge.png" alt="Logo principal" />
-        </figure>
-        <h1>ReactVideo</h1>
-      </div>
-      <div class="control_center">
-        <form action="" class="search-form">
-          <input
-            type="text"
-            name=""
-            class="input-text"
-            placeholder="Buscar..."
-          />
-          <button type="submit" value="">Comienza ahora</button>
-        </form>
-      </div>
-      <div class="control_end"></div>
-    </header>
-    <div class="hero">
-      <div class="container">
-        <div class="html_video">
-          <video class="video" src="../videos/SpaceX_ITS.mp4" controls></video>
         </div>
-        <article class="info_primaria">
-          <h2 class="title_video">
-            #AskNASA┃ What is Hubble revealing about the universe?
-          </h2>
-          <div class="footer-main">
-            <span>
-              78,919 Vistas - 30 abr. 2020
-            </span>
-            <input type="button" class="btn-likes" value="" />
-            <input type="button" class="btn-deslikes" value="" />
-            <input type="button" class="btn-share" value="" />
-            <input type="button" class="btn-save" value="" />
-            <input type="button" class="btn-more" value="" />
+      </nav>
+      <div class="container">
+        <section class="main-video">
+
+          <div class="html_video">
+            <!-- <video class="video" src="Vidios/Ratatouille2.mp4" controls></video> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d2-56uV9QsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
           </div>
-        </article>
-        <hr />
-        <article class="info_segundaria">
-          <div class="hero-container">
-            <div class="badge">
-              <img src="img/badge.png" alt="" />
-            </div>
-            <h1 class="title">
-              Curso de React.js
-            </h1>
-            <div class="descripcion">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                adipisci amet ipsa temporibus deleniti, modi, nihil animi, error
-                autem officiis hic magnam cum quasi dolor corporis quod iusto
-                vitae! Delectus.
-              </p>
-            </div>
-            <div class="countdown">
-              <input type="button" class="btn-more" value="" />
+          <article class="info_primaria">
+            <h2 class="title_video">
+              Ratatouille frases 
+            </h2>
+            <div class="footer-main">
+              <span>
+                78,919 Vistas - 30 abr. 2020
+              </span>
+              <input type="button" class="btn-likes" value="" />
+              <input type="button" class="btn-deslikes" value="" />
+              <input type="button" class="btn-share" value="" />
+              <input type="button" class="btn-save" value="" />
               <input type="button" class="btn-more" value="" />
             </div>
-          </div>
-        </article>
-        <hr />
+          </article>
+          <hr />
+          <article class="info_segundaria">
+            <div class="hero-container">
+              <div class="badge">
+                <img src="img/badge.png" alt="" />
+              </div>
+              <h1 class="title">
+                Curso de React.js
+              </h1>
+              <div class="descripcion">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                  adipisci amet ipsa temporibus deleniti, modi, nihil animi, error
+                  autem officiis hic magnam cum quasi dolor corporis quod iusto
+                  vitae! Delectus.
+                </p>
+              </div>
+              <div class="countdown">
+                <input type="button" class="btn-more" value="" />
+                <input type="button" class="btn-more" value="" />
+              </div>
+            </div>
+          </article>
+        </section>
         <section class="sugest">
           <h3>A continuación</h3>
           <div class="videos-items">
             <div class="html_video">
-              <video
-              class="video"
-              src="../videos/SpaceX_ITS.mp4"
-              controls
-              ></video>
-              <h3 class="title-sub-video">Dark Matter and Dark Energy Documentary - Exploring the Start of the Universe</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/NvqKZHpKs-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="sub-video"></iframe>
+              <h3 class="title-sub-video">
+                Dark Matter and Dark Energy Documentary - Exploring the Start of
+                the Universe
+              </h3>
               <span class="probed-subv">
                 Touch Your Heart
               </span>
@@ -155,12 +180,10 @@
           </div>
           <div class="videos-items">
             <div class="html_video">
-              <video
-              class="video"
-              src="../videos/SpaceX_ITS.mp4"
-              controls
-              ></video>
-              <h3 class="title-sub-video">NASA Live: Official Stream of NASA TV's Media Channel</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="sub-video"></iframe>
+              <h3 class="title-sub-video">
+                NASA Live: Official Stream of NASA TV's Media Channel
+              </h3>
               <span class="probed-subv">
                 NASA
               </span>
@@ -172,11 +195,13 @@
           <div class="videos-items">
             <div class="html_video">
               <video
-              class="video"
-              src="../videos/SpaceX_ITS.mp4"
-              controls
+                class="video"
+                src="../videos/SpaceX_ITS.mp4"
+                controls
               ></video>
-              <h3 class="title-sub-video">NASA Live: Official Stream of NASA TV</h3>
+              <h3 class="title-sub-video">
+                NASA Live: Official Stream of NASA TV
+              </h3>
               <span class="probed-subv">
                 NASA
               </span>
@@ -186,7 +211,9 @@
             </div>
           </div>
         </section>
-        <article class="comments"></article>
+        <article class="comments">
+
+        </article>
       </div>
     </div>
     <script src="js/main.js"></script>
