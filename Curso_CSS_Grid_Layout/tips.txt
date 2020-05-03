@@ -67,5 +67,58 @@ Layout Masonry
 	*grid-row-end: span 3 ; : finaliza en la posicion 3, recuerda que si no la inicializamos este tomara como por efecto el 
 		espacio disponible
 
-Reto
-	...
+
+Text
+	con que propiedad podemos definir en número y tamaño de columnas?
+		'-->grid-template-columns
+	
+	con que propiedad podemos definir en número y tamaño de filas?
+		'-->grid-template-rows
+	
+	grid es
+		'-->un display
+	
+	Si el tamaño de nuestras filas o columnas es el mismo podemos resumir la declaración usando
+		'-->repeat()
+	
+	si quiero dividir homogeneamente el tamaño de mis columnas o filas puedo usar 
+		'--fr
+	
+	si quiero definir un limite al tamaño de mis filas o columnas puedo usar
+		'-->minmax()
+	
+	el elemento con la propiedad dysplay: grid llava el nombre de
+		'-->container
+	
+	los hijos directos de un grid container son
+		'--> grid items
+	
+	las lines horizontales y verticales son
+		'-->grid lines
+	
+	Una fila o una columna es considerada un
+		'-->?
+	
+	el espacio entre dos filas y columnas adyacentes es
+		'-->grid cell
+	
+	al nombrar lineas estos nombres deben ir entre
+		'-->[]
+	
+	grid-template recibe
+		'-->filas / columnas
+	
+	grid-gap recibe
+		'-->El espacio entre las filas el espacio entre las columnas
+	
+	pordefecto la dirección grid implicito esta en
+		'-->rows
+	
+	para cambiar la posicion del grid implicito usamos la propiedad
+		'-->grid-auto-flow
+	
+	Propiedad usada para alinear el contenido dentro de los grid items en forma horizontal
+		'--->Justify-items
+
+	Propiedad usada para alinear contenido dentro de los grid items de forma vertical
+		'-->align-items
