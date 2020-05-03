@@ -126,7 +126,7 @@ button img {
   justify-content: center;
   /* grid-template-columns: minmax(auto-fill, 1fr); */
   
-  grid-template-columns: minmax(auto, 1024px);
+  grid-template-columns: minmax(auto, 1600px);
 }
 
 .menu{
@@ -162,6 +162,11 @@ button img {
   cursor: pointer;
 }
 
+.item li img{
+  border-radius: 50%;
+  
+}
+
 .menu ul a{
   padding: 20px 5px;
   text-decoration: none;
@@ -170,9 +175,9 @@ button img {
 
 
 
-.html_video .video{
+.html_video-main .video{
   width: 100%;
-  height: 28vw;
+  height: 30vw;
   /* height: 38vw; */
 }
 
@@ -182,16 +187,271 @@ ul{
   padding: 0em;
 }
 
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 30px;
+  grid-gap: 5px;
+  /* justify-items: center; */
+  align-items: center;
+
+}
+
+.button-footer{
+  /* border-collapse: inherit; */
+  height: 100%;
+}
+
+.button-footer button{
+  background: transparent;
+  color: #ccc8c8;
+  border:  none;
+  display: inline-block;
+  height: 100%;
+  align-items: center;
+  border-collapse: inherit;
+  box-sizing: border-box;
+  height: inherit;
+}
+
+.button-footer button img {
+  align-items: center;
+  /* height: inherit; */
+}
+
+.button-footer button p {
+  display: inline-block;
+  margin:  0;
+  font-size: 14px;
+  height: inherit;
+  align-content: flex-start;
+}
+
 .container{
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 250px;
-  grid-gap: 30px;
+  padding: 20px;
+  grid-template-columns: 1fr 400px;
+  grid-gap: 20px;
+  grid-template-areas: "main-video sugest"
+                       "comments sugest";
+}
+
+.hero-container{
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  grid-template-areas: "badge canal-title suscribir"
+                       ". descripcion descripcion";
+  grid-template-rows: 50px auto;
+}
+
+.badge {
+  grid-area: badge;
+}
+
+.badge img{
+  width: 50px;
+  cursor: pointer;
+}
+
+.canal-video-main {
+  cursor: pointer;
+  grid-area: canal-title;
+}
+
+.canal-video-main h3{
+  font-size: 16px;
+  margin: 0;
+  margin-top: 10px ;
+}
+
+.canal-video-main p{
+  font-size: 12px;
+  margin: 0;
+  color: #ccc8c8;
+}
+
+.countdown{
+  grid-area: suscribir;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.follow{
+  display: flex;
+  cursor: pointer;
+}
+
+.follow img{
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.countdown button{
+  cursor: pointer;
+  background: #cc0000;
+  color: #ffffff;
+  border: none;
+  padding: 10PX;
+  height: 75%;
+  border-radius: 5PX;
+}
+
+.descripcion {
+  grid-area: descripcion;
+}
+
+.html_video{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  /* grid-template-rows: repeat(4,1fr); */
+  grid-template-areas: "sub-video info-title"
+                       "sub-video info-second"
+                       "sub-video info-view"
+                       "sub-video .";
+}
+
+.title-sub-video{
+  font-size: 14px;
+  font-weight: 200;
+  margin: auto;
+  grid-area: info-title;
+  border-collapse: collapse;
+}
+
+
+.probed-subv{
+  grid-area: info-second;
+}
+
+.reserch-subv{
+  grid-area: info-view;
+}
+
+.probed-subv, .reserch-subv{
+  font-size: 12px;
+  color: #ccc8c8;
+  display: inline;
 }
 
 .sub-video{
-  width: 240px;
-  height: 10vw;
+  grid-area: sub-video;
+  width: 200px;
+  height: 6vw;
 }
 
+.hero-comments{
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  grid-template-areas: "badge canal-title suscribir"
+                       ". descripcion descripcion"
+                       ". values-comments .";
+  grid-template-rows: 50px auto;
+}
 
+.badge-comments {
+  grid-area: badge;
+}
+
+.badge-comments img{
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.canal-video-comments {
+  cursor: pointer;
+  grid-area: canal-title;
+}
+
+.canal-video-comments h3{
+  font-size: 16px;
+  margin: 0;
+  margin-top: 10px ;
+}
+
+.canal-video-comments p{
+  font-size: 12px;
+  margin: 0;
+  color: #ccc8c8;
+}
+
+.countdown-comments{
+  grid-area: suscribir;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.more-comments img{
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.descripcion-comments {
+  grid-area: descripcion;
+}
+
+.values-comments{
+  grid-area: values-comments;
+}
+
+.values-comments button{
+  background: transparent;
+  color: #ccc8c8;
+  border:  none;
+  display: inline-block;
+  height: 100%;
+  align-items: center;
+  border-collapse: inherit;
+}
+
+.values-comments button img {
+  align-items: center;
+  /* height: inherit; */
+}
+
+.values-comments button p {
+  display: inline-block;
+  margin:  0;
+  font-size: 14px;
+  height: inherit;
+  align-content: flex-start;
+}
+
+.main-video{
+  grid-area: main-video ;
+  border-bottom: 2px solid #313131;
+}
+
+.sugest{
+ grid-area: sugest;
+}
+
+.comments{
+  /* grid-area: comments; */
+ grid-area: comments;
+}
+@media screen and (max-width: 768px){
+  .container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "main-video" 
+                         "sugest"
+                         "comments";
+ }
+ .sub-video{
+    grid-area: sub-video;
+    width: auto;
+    height: 20vw;
+ }
+}
