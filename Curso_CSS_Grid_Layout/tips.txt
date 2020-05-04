@@ -97,7 +97,7 @@ Text
 		'-->grid lines
 	
 	Una fila o una columna es considerada un
-		'-->?
+		'-->grid track
 	
 	el espacio entre dos filas y columnas adyacentes es
 		'-->grid cell
