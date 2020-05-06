@@ -1,0 +1,41 @@
+Introduccipon a las animaciones y micro interacciones en la web
+	
+	-Son simplemente generar senzacion de movimiento de algo, una tranccision de un punto "a" un punto "b"
+
+	-Las animaciones son parte natural de interfaces
+
+	-Las animaciones ayudan a mejorrar el engagement con el usuario 
+
+Sintaxis de transiciones
+	*transition: propiedad de css que interactua con el usuario
+	   -transition : "lo que quiero modificar ejem: width" "duracion ejem: 1s" "delay ejem: 1s" "timing- function ejem: ease"	
+	*transition-property : nos permite especificar que queremos modificar
+
+	*transition-duration : nos indicara cuanto tiempo durara la transicion
+
+	*transition-delay : nos indicara cuanto demorara en comenzar el proceso una vez sea llamado
+
+	*transition-timing-funkction: ease; es una propiedad de aceleracion para que mievento se realice mas suave por defecto
+		siempre biene con "ease"
+	
+Transiciones de interaccion
+	*calc("valor1" "operacion" "Valor2") :nos permite realizar un calculo en este caso lo utilizamos para una pocision
+
+Sintaxis de Transformaciones
+	*Transform: me permite 
+		-rotar con "rotate(5deg)" 
+		-sesgar con "skew(10deg)"
+		-poscicion con "translate(50px)"
+		-tamaño con "scale(1.5)"
+
+Transformaciones de rotación
+	*recordemos que tenemos en "transform" la propiedad "rotate" la cual acciona más que todo en su elemento "z" otras:
+		-rotatex(0deg);
+		-rotatey(0deg);
+		-rotatez(0deg);
+		-rotate3D(x,y,z, valor);
+			*donde en las posiciones aclaramos si las queremos utilizar con "1" o no con "0"
+
+
+	
+	

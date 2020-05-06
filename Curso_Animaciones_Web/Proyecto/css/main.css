@@ -1,0 +1,160 @@
+body{
+  margin: 0;
+  background-color: #242222c3;
+  display: grid;
+  /* justify-content: center; */
+  width: 100%;
+  padding: 5px;
+  grid-gap: 10px;
+}
+
+.container{
+  height: 250px;
+  border: 1px solid rgb(180, 151, 207);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canastaUno{
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.pelota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: red;
+  transition-property: width, height;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+
+.pelota:hover{
+  width: 200px;
+  height: 200px;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaDos{
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+  height: 100px;
+  position: relative;
+}
+
+.canastaDos:hover .pelotaDos.aDos{
+  left: calc(50% - 98px);
+}
+
+.canastaDos:hover .pelotaDos.bDos{
+  right: calc(50% - 98px);
+}
+
+.pelotaDos {
+  transition-duration: 1s;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pelotaDos.aDos{
+  background: red;
+  height: 98px;
+  width: 98px;
+  left: 0;
+}
+
+.pelotaDos.bDos{
+  background: blue;
+  height: 98px;
+  width: 98px;
+  right: 0;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaTres{
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+  height: 100px;
+  position: relative;
+  transform: rotate(10deg) skew(10deg) translate(2px) scale(.8);
+}
+
+.canastaTres:hover .pelotaTres.aTres{
+  left: calc(50% - 98px);
+}
+
+.canastaTres:hover .pelotaTres.bTres{
+  right: calc(50% - 98px);
+}
+
+.pelotaTres {
+  transition-duration: 1s;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pelotaTres.aTres{
+  background: red;
+  height: 98px;
+  width: 98px;
+  left: 0;
+}
+
+.pelotaTres.bTres{
+  background: blue;
+  height: 98px;
+  width: 98px;
+  right: 0;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaCuatro{
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}
+
+.canastaCuatro:hover .cuadro{
+    /* rotate3D(x,y,z, valor) */
+  transform: rotate3D(0,0,1, 360deg);
+}
+
+.cuadro{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background: #7dc900;
+  height: 160px;
+  width: 160px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
