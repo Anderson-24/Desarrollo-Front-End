@@ -14,6 +14,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 200px;
 }
 
 .canastaUno{
@@ -157,4 +158,164 @@ body{
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaQuinto{
+  border: 1px solid rgb(221, 219, 219);
+  width: 200px;
+  height: 200px;
+}
+
+.canastaQuinto:hover .cuadroDos{
+    /* translate3D(x,y,z) */
+  transform: translate3D(-100px,0,40px);
+}
+
+.cuadroDos{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background: #00b5c9;
+  height: 160px;
+  width: 160px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaSeis{
+  border: 1px solid rgb(241, 239, 239);
+  width: 200px;
+  height: 200px;
+}
+
+.canastaSeis:hover .cuadroTres{
+    /* scale(x,y) */
+  transform: scale(2,.5);
+}
+
+.cuadroTres{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background: #c98300;
+  height: 160px;
+  width: 160px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaSiete{
+  border: 1px solid rgb(245, 240, 240);
+  width: 200px;
+  height: 200px;
+}
+
+.canastaSiete:hover .cuadroCuatro{
+    /* skew(x,y) */
+  transform: skew(40deg,40deg);
+}
+
+.cuadroCuatro{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  background: #a100c9;
+  height: 160px;
+  width: 160px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaOcho{
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}
+
+.canastaOcho:hover .cuadroCinco{
+  /* transform-origin: X Y; */
+  /* transform-origin: 50% 50%; */
+  transform-origin: top left;
+  /* rotateZ(z) */
+  transform: rotateZ(45deg);
+}
+
+.cuadroCinco{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 20px;
+  background: #7dc900;
+  height: 160px;
+  width: 160px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canastaNueve{
+  border: 1px solid rgb(217, 0, 255);
+  width: 98%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.canastaNueve:hover .cuadroSeis{
+  
+}
+
+.cuadroSeis{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  /* margin: 20px; */
+  background: #0075c9;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  animation-name: cuadrado6;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+
+@keyframes cuadrado6 {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  100% {
+    opacity: 0;
+    left: calc(100% - 160px);
+  }
 }

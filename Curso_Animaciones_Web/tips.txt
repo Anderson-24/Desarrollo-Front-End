@@ -36,6 +36,78 @@ Transformaciones de rotación
 		-rotate3D(x,y,z, valor);
 			*donde en las posiciones aclaramos si las queremos utilizar con "1" o no con "0"
 
+Transformaciones de traslación y perspectiva
+	*para ello tenemos que poner "perspective" al elemento padre para que sepa cual profundidad puede tener
+
+	*perspective-origin : nos permitira darle a los elementos hijos un inicio para realizar su traslacion
+	
+	*translate : cuenta con sus diferentes escalas
+		-translateX
+		-translateY
+		-translateZ
+		-translate3D
+	
+Transformaciones de escala
+
+	-se maneja con la propiedad Scale y recive solamente elemento en el eje "X" e "Y" posee una escala de "0" a "1"
+	 donde simula el porcentaje
+
+	-Recuerda que sus elementos también se ven afectados
+
+Transformaciones de sesgados
+	*skew : es la propiedad que nos permite realizar un sesgado y nos permite modificar su eje "X" e "Y" en las unidades
+	 de "deg"
+
+Punto de Transformacion
+	*transform-origin: nos permite modiifcar el unto central donde se realiza la accion es decir el punto de equilibrio
+	 sus valores se manejan en porcentaje y tambien con las palabras de posicionamiento
+	
+Sintaxis
+	*las animaciones siempre llevaran dos parametros
+		-animation-name: Que sera el nombre de nuestra animación
+		
+		-animation-duration: Que se establecera como la duracion de la animacion
+
+		y la animacion la aremos con  "@keyframe" y el nombre de la animacion
+		ejem:
+			@keyframes cuadrado {
+			   0% {
+				opacity: 1;
+			   }
+			   100% {
+			   	opacity: 0;
+			   }
+			}
+	
+	*adicionale occiones 
+		-animation-delay : determina el tiempo para que se inicie la animacion
+		
+		-animaion-iteration-count : determina cuanta veces se repetira una accion y puedo hacer que sea de manera infinita 
+		 con "infinite"
+
+		-animation-timing-function : determina la suavidad del evento con ello podemos determinar en que momento sera más 
+		 despacio o más rapido generalmente esta en "ease" que es parejo
+			-ease-in : hace que valla mas lento al inicio
+			-ease-out :have que valla mas lento en el final
+			-ease-in-out : aria que fuera lento en sus estremos
+			-linear : quiere decir que no haya ningun tipo de suavizado
+			-cunic-bezier( 1, 1, 1, 1) : configuramos de forma personalizada la acccion
+				*https://cubic-bezier.com/#.17,.67,.83,.67
+
+			-steps() : especifica la cantidad de cuadros dentro de la animacion
+
+		-animation-direction : me permite modificar el direccionamiento del evento
+			-recerse : quiere decir que inicia de "100" a "0"
+			-alternative :que va como a revotar
+
+		-animation-fill-mode : nos permite establecer una posicion cuando termine nuestra accion
+			-forwards : termina con el ultimo estado
+
+		-animmation-play-state : podemos configurar que estado queremos que nuestra animacion este por defecto,
+			esta en "running" pero tambien se puede pasar en "paused"
+
+Múltiples animaciones
+	
 
 	
-	
+
