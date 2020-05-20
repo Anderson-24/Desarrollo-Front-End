@@ -64,6 +64,7 @@ Punto de Transformacion
 	
 Sintaxis
 	*las animaciones siempre llevaran dos parametros
+		
 		-animation-name: Que sera el nombre de nuestra animación
 		
 		-animation-duration: Que se establecera como la duracion de la animacion
@@ -107,7 +108,27 @@ Sintaxis
 			esta en "running" pero tambien se puede pasar en "paused"
 
 Múltiples animaciones
+	*pedes agregar multiples animaciones separando el evento por comas
+		animation-name: pelota4, rebote;
 	
+	*recuerda que  "from" puede interpretarce como "0%" y "to" como "100%"
 
+Detectar eventos
+	*para detectar que un evento, una animacion termino nos ayudaremos con javascript 
+		const $pelota5 = document.getElementById('pelotajs5')
+
+		$pelota5.addEventListener('animationend', (event) => {
+		  if (event.animationName === 'rebote2'){
+		    // debugger
+		    $pelota5.style.animationName = "skewball"
+		  })
+		}
 	
+Optimizar render con will-change y developer tools
+	will-change: opacity; : le menciona al navegador que una propiedad va a cambiar y ello te ayuda a optimizar el render
+
+Propiedades animables
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+
+	-se deja un reto para que segun el enlace anterior se pueda guiar y realizar 3 animaciones distintas
 

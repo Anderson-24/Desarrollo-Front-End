@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-  height: 250px;
+  height: 260px;
   border: 1px solid rgb(180, 151, 207);
   display: flex;
   align-items: center;
@@ -285,10 +285,6 @@ body{
   align-items: center;
 }
 
-.canastaNueve:hover .cuadroSeis{
-  
-}
-
 .cuadroSeis{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -307,6 +303,7 @@ body{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   position: relative;
+  will-change: opacity;
 }
 
 @keyframes cuadrado6 {
@@ -317,5 +314,124 @@ body{
   100% {
     opacity: 0;
     left: calc(100% - 160px);
+  }
+}
+
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canasta10{
+  border: 1px solid rgb(135, 131, 136);
+  width: 98%;
+  height: 250px;
+  display: flex;
+  align-items: flex-end ;
+}
+
+.pelota4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  /* margin: 20px; */
+  background: #c005c7;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  animation-name: pelota4, rebote;
+  animation-duration: 4s,.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear, ease-in-out;
+  position: relative;
+}
+
+@keyframes pelota4 {
+  0% {
+    /* opacity: 1; */
+    left: 0;
+  }
+  100% {
+    /* opacity: 0; */
+    left: calc(100% - 160px);
+  }
+}
+
+@keyframes rebote {
+  /* 0% */
+  from{
+    transform: translateY(-100px);
+  }
+  /* 100% */
+  to{
+    transform: translateY(20%) scale(1, .6);
+  }
+}
+/* ====================================================================================== */
+/* ====================================================================================== */
+
+.canasta11{
+  border: 1px solid rgb(78, 243, 83);
+  width: 98%;
+  height: 250px;
+  display: flex;
+  align-items: flex-end ;
+}
+
+.pelota5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  /* margin: 20px; */
+  background: #f7d205;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  animation-name: pelota5, rebote2;
+  animation-duration: 4s,.5s;
+  animation-iteration-count: infinite, 16;
+  animation-direction: alternate;
+  animation-timing-function: linear, ease-in-out;
+  position: relative;
+}
+
+@keyframes pelota5 {
+  0% {
+    /* opacity: 1; */
+    left: 0;
+  }
+  100% {
+    /* opacity: 0; */
+    left: calc(100% - 100px);
+  }
+}
+
+@keyframes rebote2 {
+  /* 0% */
+  from{
+    transform: translateY(-150px);
+  }
+  /* 100% */
+  to{
+    transform: translateY(0%);
+  }
+}
+
+@keyframes skewball {
+  from{
+    left: 0;
+  }
+  50%{
+    transform: skew(360deg)
+  }
+  to{
+    left: calc(100% - 100px);
   }
 }
