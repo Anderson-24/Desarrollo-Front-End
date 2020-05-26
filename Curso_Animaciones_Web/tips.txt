@@ -132,3 +132,6 @@ Propiedades animables
 
 	-se deja un reto para que segun el enlace anterior se pueda guiar y realizar 3 animaciones distintas
 
+Controlar animaciones
+	-se deja de reto realizar una animacion propia o añadirle alunos eventos a la que ya esta establecida
+
