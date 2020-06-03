@@ -441,37 +441,69 @@ body{
 /* ====================================================================================== */
 
 .canasta12{
+  display: grid;
+  grid-template-columns: 1fr;
   border: 1px solid #d4a5e6;
-  max-width: 600px;
-  width: 85%;
+  height: 240px;
+  width: 600px;
+  
   position: relative;
+  /* justify-items: flex-end; */
+  grid-template-rows: repeat(8, 30px);
+  grid-template-areas: "top top top"
+                       "top top top"
+                       "top top top"
+                       "normal normal normal"
+                       "normal normal normal"
+                       "normal normal normal"
+                       ". . ."
+                       "buttons buttons buttons";
 }
 
 .pelota6{
   box-sizing: inherit;
   display: flex;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   background: red;
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: absolute;
   color: white;
   border-radius: 50%;
+  z-index: 6;
+  grid-area: normal;
 }
 
 .buttons{
   display: grid;
+  position: absolute;
   grid-gap: 5px;
-  grid-template-columns: repeat(5, auto);
+  width: 100%;
+  grid-template-columns: repeat(7, auto);
   justify-content: center;
+  align-items: center;
+  /* align-items: flex-end; */
+  grid-area: buttons;
+}
+
+.lbl_Speed{
+  margin: 0;
+  padding: 5.5px;
+  background: #0075c9;
+  border: 1px solid whitesmoke;
+  color: white;
+  display: block;
+  width: 40px;
+  text-align: center;
 }
 
 .btn {
   text-align: center;
   background: #7dc800;
   /* arriba, derecha, para abajo */ /* y como no configure tercer parametro toma el de la derecha*/
-  padding: .6em .8em .8em;
+  padding: .55em .8em .6em;
   color: white;
   border: none;
   border-radius: 5px;
@@ -486,4 +518,40 @@ body{
 
 .btn:active{
   transform: scale(.9);
+}
+
+/* ====================================================================== */
+/* ====================================================================== */
+
+.platzi{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 40px auto;
+  /* background: red; */
+  transform: rotate(45deg);
+}
+
+.platzi-left{
+  width: 80%;
+  /* La altura es dividida entre left y right */
+  height: 65%;
+  border: 20px solid #97c93e; /*recuerda el posicionamiento top right left bottom*/
+                /* LeftTop rightTop Leftbottom rightbottom  */
+  border-radius: 20px 20px 0 0;
+  border-bottom: none;
+  /* controla que el elemnto no se salga del padre  */
+  box-sizing: border-box;
+  /* para que esten pegados movemos un pixel */
+  position: relative;
+  top: 1px;
+}
+
+.platzi-right{
+  width: 100%;
+  height: 35%;
+  border: 20px solid #97c93e;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
+  box-sizing: border-box;
 }

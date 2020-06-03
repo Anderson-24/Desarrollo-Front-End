@@ -11,12 +11,12 @@ const animation = $pelotajs6.animate(
     {
       // transform: 'translateX(calc(85% - 100px))'
       // transform: 'translateX(500px)'
-      transform: "translateX(320px)",
+      transform: "translateX(510px)",
     },
   ],
   {
     duration: 2000,
-    delay: 1000,
+    // delay: 500,
     direction: "normal",
     easing: "linear",
     iterations: Infinity, // Para usar la propiedad 'indinity' aqui la utilizamos con la de JavaScript
@@ -26,28 +26,69 @@ const animation = $pelotajs6.animate(
   }
 );
 
+// $pelotajs6.style.animationPlayState = "paused";
+
 const $playButton = document.getElementById("play");
-const $pauseButton = document.getElementById("pause");
 const $stopButton = document.getElementById("stop");
 const $reverseButton = document.getElementById("reverse");
+const $acelerarButton = document.getElementById("Acelerar");
+const $FrenarButton = document.getElementById("Frenar");
+const $SubirButton = document.getElementById("Subir");
+const $lblSpeedButton = document.getElementById("lbl_Speed");
+
+animation.playbackRate = 0
 
 $playButton.addEventListener('click', (event) => {
-  animation.play();
+  // animation.play();
+  if ($playButton.innerHTML == "Pause") {
+    $playButton.innerHTML = "Play";
+  }else {
+    $playButton.innerHTML = "Pause";
+  }
+  
+  if ($playButton.innerHTML == "Play") {
+    animation.pause();
+    $playButton.innerHTML = "Play"
+  } else {
+    animation.play();
+    $playButton.innerHTML = "Pause"
+  }
 })
-$pauseButton.addEventListener('click', (event) => {
-  animation.pause();
-})
-$stopButton.addEventListener('click', (event) => {
-  animation.define([
-    'require',
-    'dependency'
-  ], function(require, factory) {
-    'use strict';
-    
-  });;
-})
+
 $reverseButton.addEventListener('click', (event) => {
   animation.reverse();
+})
+
+$SubirButton.addEventListener('click', (event) => {
+  if ($pelotajs6.style.gridArea == "top / top / top / top") {
+    $SubirButton.innerHTML = "Subir";
+    $pelotajs6.style.gridArea = "normal";
+  } else {
+    $SubirButton.innerHTML = "Bajar";
+    $pelotajs6.style.gridArea = "top";
+  }
+})
+
+$acelerarButton.addEventListener('click', (event) => {
+  if (animation.playbackRate < 9.9){
+    animation.playbackRate = animation.playbackRate + 0.1;
+    if (animation.playbackRate >= 9.9) {
+      $lblSpeedButton.innerText = `${animation.playbackRate.toFixed(1)}`; 
+    }else {
+      $lblSpeedButton.innerText = `0${animation.playbackRate.toFixed(1)}`; 
+    }
+  }
+})
+
+$FrenarButton.addEventListener('click', (event) => {
+  if (animation.playbackRate > 0.1) {
+    animation.playbackRate = animation.playbackRate - 0.1;
+    $lblSpeedButton.innerText = `0${animation.playbackRate.toFixed(1)}`;
+  }
+})
+
+$stopButton.addEventListener('click', (event) => {
+  animation.cancel();
 })
 
 // alert('hola')
