@@ -3,7 +3,7 @@ const $pelota5 = document.getElementById('pelotajs5')
 
 // $pelota5.addEventListener('animationstart', (event) => {
 // $pelota5.addEventListener('animationiteration', (event) => {
-$pelota5.addEventListener('animationend', (event) => {
+$pelota5.addEventListener('click', (event) => {
   if (event.animationName === 'rebote2'){
     // debugger
     $pelota5.style.animationName = "skewball"

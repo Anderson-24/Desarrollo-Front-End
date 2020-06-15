@@ -135,3 +135,7 @@ Propiedades animables
 Controlar animaciones
 	-se deja de reto realizar una animacion propia o añadirle alunos eventos a la que ya esta establecida
 
+Creando un modal
+	flex-direction: column ; nos va a permitir que los elementos dentro de un display flex se organicen en columnas
+
+	visibility: hidden || visible; va a controlar que el objeto sea cickleable o no 
